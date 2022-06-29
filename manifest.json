@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail URL Changer",
+    "version": "1.0.0", 
+    "description": "This extension helps to use a gmail from address to make a search.",
+    "author": "Celebrity Developer",
+    "content_scripts": [
+        {
+            "matches": ["*://mail.google.com/*"],
+            "js": ["Content.js"]
+        }
+    ]
+}
